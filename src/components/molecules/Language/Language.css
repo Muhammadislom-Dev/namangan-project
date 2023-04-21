@@ -1,0 +1,39 @@
+.navbarpage_language {
+  position: relative;
+}
+.navbarpage_language-wrapper {
+  padding: 7px 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.navbarpage_language-icon {
+  width: 20px;
+  height: 20px;
+  color: #ffff;
+}
+
+.navbarpage_language-bar {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  width: 75px;
+  right: 0;
+  top: 50px;
+  border-radius: 12px;
+  z-index: 10;
+  color: white;
+  overflow: hidden;
+}
+
+.navbarpage_language-bar p {
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+  color: aqua;
+}

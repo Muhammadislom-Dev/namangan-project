@@ -1,0 +1,35 @@
+.navbar {
+  padding: 20px 0;
+}
+
+.navbar-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 25px 35px;
+}
+
+.navbar-page {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar-name {
+  width: 250px;
+  color: #8a2be2;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #8a2be2;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
