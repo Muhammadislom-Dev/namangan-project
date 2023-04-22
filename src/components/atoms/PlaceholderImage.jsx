@@ -1,18 +1,18 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import PropTypes from "prop-types";
 import "react-lazy-load-image-component/src/effects/opacity.css";
-import announcementPlaceholder from "@/assets/images/announcement-placeholder.png";
-import userAvatarPlaceholder from "@/assets/images/icons/UserAvatarPlaceholder.svg";
+// import announcementPlaceholder from "@/assets/images/announcement-placeholder.png";
+// import userAvatarPlaceholder from "@/assets/images/icons/UserAvatarPlaceholder.svg";
 
-const placeholders = {
-  announcement: announcementPlaceholder,
-  user: userAvatarPlaceholder,
-};
+// const placeholders = {
+//   announcement: announcementPlaceholder,
+//   user: userAvatarPlaceholder,
+// };
 
 function PlaceholderImage({ src, alt, styles, imageFor }) {
   return (
     <LazyLoadImage
-      src={src || placeholders[imageFor]}
+      src={src}
       alt={alt}
       width={styles.width}
       height={styles.height}
@@ -24,7 +24,7 @@ function PlaceholderImage({ src, alt, styles, imageFor }) {
       }}
       onError={(e) => {
         e.target.onerror = null;
-        e.target.src = placeholders[imageFor];
+        // e.target.src = placeholders[imageFor];
       }}
     />
   );

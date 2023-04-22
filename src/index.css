@@ -25,3 +25,8 @@ code {
   background-color: #8a2be2;
   border-radius: 50px;
 }
+
+.container-fluid {
+  width: 1440px;
+  margin: 0 auto;
+}
