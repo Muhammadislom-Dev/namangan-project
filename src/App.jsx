@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Root from "./pages/Root";
 import Home from "./pages/Home";
+import Footer from "./components/organisms/Footer/Footer";
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

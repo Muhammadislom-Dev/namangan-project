@@ -8,3 +8,4 @@ export { default as LogoTwo } from "./logo2.png";
 export { default as LogoThree } from "./logo3.png";
 export { default as LogoFour } from "./logo4.png";
 export { default as LogoFive } from "./logo5.png";
+export { default as CompanyImage } from "./company.jpg";
