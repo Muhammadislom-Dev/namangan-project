@@ -32,7 +32,7 @@ const Footer = () => {
             </li>
           </ul>
           <ul className="footer-list">
-            <p>Присоединяйтесь к нам</p>
+            <p className="footer-name">Присоединяйтесь к нам</p>
             <li className="footer-items">
               <span>
                 <a href="#" className="footer-title">
@@ -52,7 +52,7 @@ const Footer = () => {
             </li>
           </ul>
           <ul className="footer-list">
-            <p>Заказывайте по номеру</p>
+            <p className="footer-name">Заказывайте по номеру</p>
             <li className="footer-item">
               <a href="#" className="footer-links">
                 +998 90 169 35 27
