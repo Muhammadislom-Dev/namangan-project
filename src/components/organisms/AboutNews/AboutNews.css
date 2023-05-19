@@ -11,7 +11,32 @@
 }
 
 .news-texts {
-  width: 650px;
+  width: 700px;
   font-size: 16px;
   line-height: 22px;
+}
+
+.news-archive {
+  font-size: 18px;
+  line-height: 26px;
+  color: #8a2be2;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about-news .container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.news-left{
+  width: 27%;
+  margin-top: 10px;
+}
+
+.about-news-top{
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 8px;
+  width: 100%;
 }

@@ -2,16 +2,19 @@ import React from "react";
 import "./Navbar.css";
 import { LogoIcon } from "../../../assets/icons";
 import Languages from "../../molecules/Language/Language";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
     <div className="navbar">
       <div className="container">
         <div className="navbar-page">
-          <img src={LogoIcon} alt="" className="navbar-img" />
-          <h3 className="navbar-name">
-            Namangan viloyati OITSga qarshi kurashish markazi
-          </h3>
+          <Link to="/" style={{ display: "flex", alignItems: "center" }}>
+            <img src={LogoIcon} alt="" className="navbar-img" />
+            <h3  className="navbar-name">
+              Namangan viloyati OITSga qarshi kurashish markazi
+            </h3>
+          </Link>
         </div>
         <ul className="navbar-list">
           <li className="navbar-item">
@@ -40,7 +43,7 @@ function Navbar() {
             </a>
           </li>
         </ul>
-        {/* <Languages /> */}
+        <Languages />
       </div>
     </div>
   );
