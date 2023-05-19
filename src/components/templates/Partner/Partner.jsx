@@ -1,50 +1,30 @@
-import React from "react";
-import {
-  LogoFive,
-  LogoFour,
-  LogoOne,
-  LogoThree,
-  LogoTwo,
-} from "../../../assets/images";
+import React, { useEffect, useState } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import PlaceholderImage from "../../atoms/PlaceholderImage";
 import "./Partner.css";
-
-const partner = [
-  {
-    id: 1,
-    img: LogoOne,
-  },
-  {
-    id: 2,
-    img: LogoTwo,
-  },
-  {
-    id: 3,
-    img: LogoThree,
-  },
-  {
-    id: 4,
-    img: LogoFour,
-  },
-  {
-    id: 5,
-    img: LogoFive,
-  },
-];
+import axios from "axios";
+import { API_URL, IMAGE_URL } from "../../../services/api";
 
 function Partner() {
+  const [partner, setPartner] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get(`${API_URL}/sources`)
+      .then((res) => setPartner(res.data.data))
+      .catch((err) => console.log(err));
+  }, []);
   return (
     <div className="partner">
       <div className="container">
         <h2 className="partner-name">Foydali manbalar</h2>
-        <Splide  aria-label="My Favorite Images">
+        <Splide aria-label="My Favorite Images">
           <SplideSlide>
             {partner.map((evt) => (
               <PlaceholderImage
                 styles={{ width: "210px", height: "80px" }}
-                src={evt.img}
+                src={`${IMAGE_URL}/${evt?.image_src}`}
               />
             ))}
           </SplideSlide>
@@ -52,7 +32,7 @@ function Partner() {
             {partner.map((evt) => (
               <PlaceholderImage
                 styles={{ width: "210px", height: "80px" }}
-                src={evt.img}
+                src={`${IMAGE_URL}/${evt?.image_src}`}
               />
             ))}
           </SplideSlide>

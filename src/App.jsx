@@ -3,6 +3,7 @@ import "./App.css";
 import Root from "./pages/Root";
 import Home from "./pages/Home";
 import Footer from "./components/organisms/Footer/Footer";
+import NewsAbout from "./pages/AboutNews";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Root />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/news/:id" element={<NewsAbout />} />
       </Routes>
       <Footer />
     </div>

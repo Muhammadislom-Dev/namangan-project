@@ -26,7 +26,7 @@ const Languages = () => {
 
   const onChangeLanguage = (value) => {
     localStorage.setItem("i18nextLng", value);
-    i18n.changeLanguage(value)
+    i18n.changeLanguage(value);
     setSelectedLanguage(value);
     setactiveLang((el) => !el);
   };

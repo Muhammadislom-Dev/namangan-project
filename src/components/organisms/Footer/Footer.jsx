@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="footer-page">
           <ul className="footer-list">
             <a href="#" className="footer-link">
-              SFood
+              Namangan OITS
             </a>
             <li className="footer-item">
               <a href="#" className="footer-links">
@@ -54,8 +54,8 @@ const Footer = () => {
           <ul className="footer-list">
             <p className="footer-name">Заказывайте по номеру</p>
             <li className="footer-item">
-              <a href="#" className="footer-links">
-                +998 90 169 35 27
+              <a href="tel:+998931704448" className="footer-links">
+                +998 93 170 44 48
               </a>
             </li>
           </ul>
