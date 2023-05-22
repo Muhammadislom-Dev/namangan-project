@@ -36,14 +36,17 @@ function Header() {
         className="mySwiper">
         {slider.map((evt) => (
           <SwiperSlide>
-            <img className="header-img" src={`${IMAGE_URL}/${evt?.image_src}`} />
+            <img
+              className="header-img"
+              src={`${IMAGE_URL}/${evt?.image_src}`}
+            />
             <div className="container">
               <div className="header-list">
                 <h2 className="header-name">
                   {evt[`title_${i18next.language}`]}
                 </h2>
                 <p className="header-text">{evt[`text_${i18next.language}`]}</p>
-                <Link className="header-link" to="/">
+                <Link className="header-link" to={`/category/${evt.id}`}>
                   Batafsil
                 </Link>
               </div>

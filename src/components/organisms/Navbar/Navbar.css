@@ -34,3 +34,8 @@
   line-height: 24px;
   font-weight: 500;
 }
+
+.navbar-img {
+  width: 80px;
+  object-fit: contain;
+}

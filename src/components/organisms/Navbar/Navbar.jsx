@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.css";
-import { LogoIcon } from "../../../assets/icons";
+import { NamanganIcon } from "../../../assets/images";
 import Languages from "../../molecules/Language/Language";
 import { Link } from "react-router-dom";
 
@@ -10,7 +10,7 @@ function Navbar() {
       <div className="container">
         <div className="navbar-page">
           <Link to="/" style={{ display: "flex", alignItems: "center" }}>
-            <img src={LogoIcon} alt="" className="navbar-img" />
+            <img  src={NamanganIcon} alt="" className="navbar-img" />
             <h3  className="navbar-name">
               Namangan viloyati OITSga qarshi kurashish markazi
             </h3>
