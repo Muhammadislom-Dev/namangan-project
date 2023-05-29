@@ -33,6 +33,10 @@
   margin-bottom: 0;
   color: #8a2be2;
   font-weight: 500;
+     display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 .news-text {
   padding: 10px;
