@@ -16,6 +16,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 25px;
+  flex-wrap: wrap;
 }
 
 .news-list {
@@ -33,7 +34,7 @@
   margin-bottom: 0;
   color: #8a2be2;
   font-weight: 500;
-     display: -webkit-box;
+  display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden;
@@ -42,8 +43,9 @@
   padding: 10px;
   color: gray;
   margin-top: 0;
-   display: -webkit-box;
+  display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 5;
+  margin-bottom: 0;
   overflow: hidden;
 }
