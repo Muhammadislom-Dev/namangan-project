@@ -20,26 +20,26 @@ function About() {
 
   return (
     <div className="about">
-      {about.map((about) => (
-        <div className="container">
-          <PlaceholderImage
-            styles={{ width: "500px" }}
-            src={`${IMAGE_URL}/${about?.image_src}`}
-          />
-          <div className="about-list">
-            <h3 className="about-name">
-              {" "}
-              {about[`title_${i18next.language}`]}
-            </h3>
-            <p className="about-text">
-              {about[`description_${i18next.language}`]}
-            </p>
-            {/* <Link className="about-link" to="/about">
+      {/* {about.map((about) => ( */}
+      <div className="container">
+        <PlaceholderImage styles={{ width: "500px" }} src={CompanyImage} />
+        <div className="about-list">
+          <h3 className="about-name">Markaz haqida</h3>
+          <p className="about-text">
+            ОИТС тўғрисидаги дастлабки хабарлар АҚШда рўйхатга олинган. 1981
+            йилда Лос-Анжелес ва Нью-Йорклик гомосексуалистларда пневмоцист
+            пневмониянинг 5 ҳолати ва Капоши саркомасининг 26 ҳолати аниқланган.
+            Уларнинг кўпчилигида ОИВ туфайли юзага келган Т–ҳужайралари
+            иммунитет танқислиги аниқланган. Биринчи марта ОИВ инфекциясининг
+            якуний босқичи таърифланди ва кейинчалик унга “Орттирилган Иммунитет
+            Танқислиги Синдроми” (ОИТС) деган ном берилди.
+          </p>
+          {/* <Link className="about-link" to="/about">
             Batafsil
           </Link> */}
-          </div>
         </div>
-      ))}
+      </div>
+      {/* ))} */}
     </div>
   );
 }
