@@ -20,7 +20,6 @@ function About() {
 
   return (
     <div className="about">
-      {/* {about.map((about) => ( */}
       <div className="container">
         <PlaceholderImage styles={{ width: "500px" }} src={CompanyImage} />
         <div className="about-list">
@@ -34,12 +33,8 @@ function About() {
             якуний босқичи таърифланди ва кейинчалик унга “Орттирилган Иммунитет
             Танқислиги Синдроми” (ОИТС) деган ном берилди.
           </p>
-          {/* <Link className="about-link" to="/about">
-            Batafsil
-          </Link> */}
         </div>
       </div>
-      {/* ))} */}
     </div>
   );
 }

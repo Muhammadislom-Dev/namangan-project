@@ -45,15 +45,13 @@ function Process() {
         </p>
         <h2 className="process-name">Jarayon</h2>
         <div className="process-page">
-          {action.map((evt) => (
+          {process.map((evt) => (
             <div className="process-list">
               <PlaceholderImage
                 styles={{ width: "350px", height: "250px" }}
-                src={`${IMAGE_URL}/${evt?.image_src}`}
+                src={evt.img}
               />
-              <h3 className="process-names">
-                {evt[`title_${i18next.language}`]}
-              </h3>
+              <h3 className="process-names">{evt.title}</h3>
             </div>
           ))}
         </div>
