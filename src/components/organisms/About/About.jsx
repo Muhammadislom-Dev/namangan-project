@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import { API_URL, IMAGE_URL } from "../../../services/api";
 import { useTranslation } from "react-i18next";
+import NamanganImage from './namangan.jpg'
 
 function About() {
   const [about, setAbout] = useState([]);
@@ -21,7 +22,7 @@ function About() {
   return (
     <div className="about">
       <div className="container">
-        <PlaceholderImage styles={{ width: "500px" }} src={CompanyImage} />
+        <PlaceholderImage styles={{ width: "500px" }} src={NamanganImage} />
         <div className="about-list">
           <h3 className="about-name">Markaz haqida</h3>
           <p className="about-text">
